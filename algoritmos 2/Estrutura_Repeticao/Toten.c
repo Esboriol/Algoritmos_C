@@ -10,7 +10,15 @@ float misto=2.50;
 int Sabor_mix=0;
 float Ovomaltine=16.90;
 float Brownie=16.90;
+float Valor_cas=0;
+float Valor_Mix=0;
 int parar=0;
+float pepsi=10;
+float coca_cola=10;
+float guarana=10;
+float sprit=10;
+int sabor_be=0;
+float Valor_Be=0;
 
 
 int main()
@@ -36,13 +44,13 @@ int main()
 
                 if (Sabor_ca == 1)
                 {
-                Sabor_ca=Chocolate;
+                Valor_cas=Chocolate;
 
               } else if (Sabor_ca=2){
-                Sabor_ca=Doce_de_leite;
+                Valor_cas=Doce_de_leite;
 
               } else if(Sabor_ca == 3){
-                Sabor_ca=misto;
+                Valor_cas=misto;
               } else if (Sabor_ca >= 4){
                 printf("ops nao temos essa opção");
 
@@ -55,10 +63,10 @@ int main()
 
             if (Sabor_mix == 1)
             {
-                Sabor_mix=Ovomaltine;
+                Valor_Mix=Ovomaltine;
             }else if (Sabor_mix == 2)
             {
-                Sabor_mix=Brownie;
+                Valor_Mix=Brownie;
             }
             
         
@@ -68,7 +76,31 @@ int main()
         }
         } else if (escolha ==2 )
         {
-            /* code */
+            printf("O que voce deseja: ");
+            printf("Pepsi 1, Coca cola 2, Guarana 3, Sprit 4: ");
+            scanf("%d", &sabor_be);
+            if (sabor_be == 1)
+            {
+                Valor_Be == pepsi;
+            } else if (sabor_be == 2)
+            {
+                Valor_Be == coca_cola;
+            } else if (sabor_be == 3)
+            {
+                Valor_Be == guarana;
+            } else if (sabor_be == 4)
+            {
+                Valor_Be == sprit;
+            } else if (sabor_be >= 4)
+            {
+                printf ("Ops nao temos essa opcao");
+            }
+            
+            
+            
+            
+            
+        
         }
         
         
