@@ -40,20 +40,20 @@ int main()
     do
     {
     
-    printf("Qual produto voce deseja comprar: \n");
-    printf("Sorverte 1, Bebida 2, Lanche 3, Batata 4: ");
+    printf("Qual produto voce deseja comprar: ");
+    printf("\nSorverte 1 \nBebida 2 \nLanche 3 \nBatata 4 \n");
     scanf("%d", &escolha);
 
         if (escolha == 1)
         {
         printf("O que voce deseja: \n");
-        printf("Casquinha 1, Mix 2: ");
+        printf("Casquinha 1 \nMix 2 \n");
         scanf("%d", &sorvete);
 
             if (sorvete == 1)
             {
             printf("Qual sabor voce deseja: \n");
-            printf("Chocolate 1, Doce de leite 2, Mista 3: ");
+            printf("Chocolate 1 ------ R$2,50 \nDoce de leite 2 ------ R$2,50 \nMista 3 ------ R$2,50 \n ");
             scanf("%d", &Sabor_ca);
 
                 if (Sabor_ca == 1)
@@ -76,7 +76,7 @@ int main()
             }else if (sorvete == 2)
          {
             printf("Qual Sabor voce deseja: \n");
-            printf("Ovomaltine 1, Brownie 2: ");
+            printf("Ovomaltine 1 ------ R$16,90\nBrownie 2 ------ R$16,90 \n");
             scanf("%d", &Sabor_mix);
 
             if (Sabor_mix == 1)
@@ -106,8 +106,8 @@ int main()
 
         } else if (escolha ==2 )
         {
-            printf("O que voce deseja: ");
-            printf("Pepsi 1, Coca cola 2, Guarana 3, Sprit 4: ");
+            printf("O que voce deseja: \n");
+            printf("Pepsi 1 ------ R$10,00\nCoca cola 2 ------ R$10,00 \nGuarana 3 ------ R$10,00 \nSprit 4 ------ R$10,00\n");
             scanf("%d", &sabor_be);
             if (sabor_be == 1)
             {
@@ -132,8 +132,8 @@ int main()
             
         } else if (escolha ==3)
         {
-            printf("Qual lanche voce deseja:");
-            printf("Whopper 1, Cheddar 2, Big King 3, Chicken 4: ");
+            printf("Qual lanche voce deseja:\n");
+            printf("Whopper 1 ------ R$27,90\nCheddar 2 ------ R$29,90\nBig King 3 ------ R$25,90\nChicken 4 ------ R$23,90\n");
             scanf("%d", &sabor_Lan);
 
             if (sabor_Lan == 1)
@@ -160,8 +160,8 @@ int main()
             
         } else if (escolha == 4)
         {
-            printf("Qual batata voce deseja:");
-            printf("Batata frita 1, Batata Cheddar 2: ");
+            printf("Qual batata voce deseja:\n");
+            printf("Batata frita 1 ------ R$11,34\nBatata Cheddar 2 ------ 31,40 \n");
             scanf("%d", &Sabor_Bata);
 
             if (Sabor_Bata ==1)
