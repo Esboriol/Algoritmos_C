@@ -17,11 +17,17 @@ int main()
         printf("Qual foi a nota do %d trabalho: ", d+1);
         scanf("%f", &trabalho[d]);
     }
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%f %f \n", nota[i], trabalho[i]);
+    }
+    
     
     printf("Quantas vezes voce faltou: ");
     scanf("%d", &falta);
 
-    if (falta >3)
+    if (falta >= 3)
     {
         printf("Voce repetiu de ano por falta");
 
@@ -29,7 +35,7 @@ int main()
     }
     
 
-    float valor_nota = (trabalho [0] + trabalho [1] + trabalho [2]) /3 * 0.15;
+    float valor_nota = (trabalho [0] + trabalho [1] + trabalho [2]) * 0.15;
     float nota_um = nota[0] * 0.25;
     float nota_dois = nota[1] * 0.30;
 
